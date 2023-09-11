@@ -1,3 +1,9 @@
+@media(max-width:600px){
+    .main-header p, .main-nav-link, p{
+        font-size: 8px;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -55,9 +61,9 @@ ul{
 
 .main-header h1{
     text-transform: uppercase;
-    font-size: 3.4em;
     text-shadow: 3px 0 0px black;
     text-align: center;
+    font-size: calc(1em + 3vw);
 }
 .main-header p{
     background-color: rgb(0, 0, 0, 0.65);
@@ -79,7 +85,6 @@ footer p::selection{
     text-shadow: none;
 }
 
-
 .container{
     width: 100%;
     max-width: 1000px;
@@ -95,9 +100,18 @@ footer p::selection{
 .article-header h1{
     padding: 10px 10px 7.5px 10px;
     border-bottom: 2.5px solid #ccc;
-    font-size: 24px;
+    font-size: 1.5em;
     background-color: #eee;
 }
+
+.article-header h1{
+    text-transform: uppercase;
+}
+
+.js-block .article-header h1{
+    text-transform: capitalize;
+}
+
 .article-content p{
     width: 98%;
     margin: 25px 0;
