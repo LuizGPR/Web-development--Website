@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+}
+
+.main-header{
+    background: url(imagens/bg-2.jpg) no-repeat scroll;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.main-navigation{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px 50px 0;
+}
+
+ul{
+    text-align: center;
+}
+
+.main-navigation ul li{
+    display: inline-block;
+    margin: 5px;
+}
+.main-nav-link{
+    display: block;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-nav-link:hover{
+    background-color: rgba(255, 255, 255, 0.35);
+    color: black;
+}
+
+.main-header h1{
+    text-transform: uppercase;
+    font-size: 3.4em;
+    text-shadow: 3px 0 0px black;
+    text-align: center;
+}
+.main-header p{
+    background-color: rgb(0, 0, 0, 0.65);
+    padding: 15px;
+    border-bottom: 2.5px solid;
+    text-align: center;
+}
+
+/* ::selection serve para mudar a cor de quando você seleciona um texto */
+::selection{
+    background-color:#8ff;
+    color: black;
+}
+.main-header h1::selection{
+    text-shadow: 1.5px 0 0px white;
+}
+footer p::selection{
+    color: black;
+    text-shadow: none;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.article-content{
+    margin: 25px 0;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.article-header h1{
+    padding: 10px 10px 7.5px 10px;
+    border-bottom: 2.5px solid #ccc;
+    font-size: 24px;
+    background-color: #eee;
+}
+.article-content p{
+    width: 98%;
+    margin: 25px 0;
+    text-align: justify;
+}
+
+.learn-more-link{
+    display: block;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #CDC7C3;
+    text-decoration: none;
+    color: #000;
+}
+.learn-more-link:hover{
+    background-color: #555;
+    color:#fff;
+}
+footer{
+    height: 50px;
+    color: #eee;
+    text-shadow: 2px 1px 0 black;
+    text-align: center;
+    background-color: #6B6C68;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
