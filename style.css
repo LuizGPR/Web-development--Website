@@ -1,5 +1,5 @@
 @media(max-width:600px){
-    .main-header p, .main-nav-link, p{
+    .main-header p, .main-nav-link, p, h1,.learn-more-link{
         font-size: 8px;
     }
 }
@@ -100,11 +100,8 @@ footer p::selection{
 .article-header h1{
     padding: 10px 10px 7.5px 10px;
     border-bottom: 2.5px solid #ccc;
-    font-size: 1.5em;
+    font-size: calc(1em + 1vw);
     background-color: #eee;
-}
-
-.article-header h1{
     text-transform: uppercase;
 }
 
@@ -121,7 +118,7 @@ footer p::selection{
 .learn-more-link{
     display: block;
     width: fit-content;
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
     background-color: #CDC7C3;
     text-decoration: none;
