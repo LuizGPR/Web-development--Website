@@ -1,8 +1,3 @@
-@media(max-width:600px){
-    .main-header p, .main-nav-link, p, h1,.learn-more-link{
-        font-size: 8px;
-    }
-}
 
 *{
     margin: 0;
@@ -20,20 +15,22 @@ body{
     background-position: center;
     background-size: cover;
     height: 600px;
-    position: relative;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title{
     display: flex;
     flex-direction: column;
     gap: 50px;
-    justify-content: center;
     align-items: center;
-    color: #fff;
 }
-
 .main-navigation{
     position: absolute;
-    top: 0;
-    right: 0;
-    margin: 20px 50px 0;
+    right: 50px;
+    top: 20px;
 }
 
 ul{
@@ -65,11 +62,10 @@ ul{
     text-align: center;
     font-size: calc(1em + 3vw);
 }
-.main-header p{
+.main-title p{
     background-color: rgb(0, 0, 0, 0.65);
     padding: 15px;
     border-bottom: 2.5px solid;
-    text-align: center;
 }
 
 /* ::selection serve para mudar a cor de quando você seleciona um texto */
@@ -110,9 +106,7 @@ footer p::selection{
 }
 
 .article-content p{
-    width: 98%;
     margin: 25px 0;
-    text-align: justify;
 }
 
 .learn-more-link{
@@ -129,12 +123,38 @@ footer p::selection{
     color:#fff;
 }
 footer{
-    height: 50px;
+    padding: 20px 0;
     color: #eee;
     text-shadow: 2px 1px 0 black;
     text-align: center;
-    background-color: #6B6C68;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #6B6C68;    
+}
+
+@media(max-width:500px){
+    .main-header p, .main-nav-link, p, h1,.learn-more-link{
+        font-size: 8px;
+    }
+    .main-header{
+        height: 250px;
+        align-items: flex-end;
+    }
+    .main-header p{
+        padding: 10px;
+    }
+    .main-title{
+        gap: 30px;
+        margin-bottom:50px;
+    }
+    .main-navigation{
+        width: max-content;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20px;
+    }
+    .main-nav-link{
+        padding: 8px 18px;
+    }
+    .article-header h1{
+        font-size: 14px;
+    }
 }
